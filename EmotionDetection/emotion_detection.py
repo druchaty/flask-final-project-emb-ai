@@ -30,6 +30,7 @@ def emotion_detector(text_to_analyse):
 
         dominant_emotion = max(emotions, key=emotions.get)
 
+    # For the rest status_code's including 400 the values will be 'None'
     return { 
         "anger": anger, 
         "disgust": disgust, 
